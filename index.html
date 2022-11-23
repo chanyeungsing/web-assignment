@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Touring Guide of Hong Kong</title>
+        <style>
+            #top{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            #loginbox {
+                display: block;
+                border: 2px solid black;
+                border-radius: 10px ;
+                width: 250;
+                height: 65;
+                padding: 25px;
+                float: right;
+                background-color: gray;
+            }
+
+            body{
+                background-image: url('background.jpg');
+            }
+
+            #TS{
+                display:flex-wrap ;
+                justify-content: flex-start ;
+                width: auto;
+                height: auto; 
+                border: 2px solid white;
+            }
+
+            body {
+                margin: 0;}
+  
+            .menu ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                width: 150px;
+                background-color: lightblue;
+                text-shadow: 2px 2px 2px red;
+                border-radius: 10px;
+                display: inline-block;}
+
+            .menu a{
+                text-decoration: none;
+                padding: 10px 20px;
+                line-height: 1.2em;
+                color: white;
+                display: block;}
+
+            a:hover{
+                background-color: lightgreen;
+                border-radius: 10px;
+                color: black;}
+
+            .menu .sub{
+                position: absolute;
+                top: :38px;
+                background-color: orange;
+                box-shadow: 10px 10px 5px grey;
+                transform: rotate(-10deg);}
+
+            .sub a:hover {
+                background-color: lightblue;}
+
+            .sub li{
+                overflow: hidden;
+                height: 0px;
+                transition: height 500ms;}
+
+            li:hover .sub li{
+                height: 40px;}
+        </style>
+
+        <script>
+        </script>
+
+    </head>
+    <body>
+
+        <div id="top">
+            <div><a href="index.html"><img src="HKTB.jpg" width="300" height="100"></a></div>
+            <div style="font-size: 60;">Hong Kong Tourism Board</div>
+            <form id="loginbox" onsubmit="checkSomething();return False">
+                    Username:<input type="text" name="username" required/><br/>
+                    Password:<input type="password" name="password" required/><br/>
+                    <input type="submit" value="Login" onclick="alert('Welcome to Hong Kong')"/>
+                    <input type="reset" value="reset"/></form>
+        </div>
+        <hr/>
+
+        <div class="menu">
+            <ul>
+              <li>
+                <a href="#">Information</a>
+                <ul class="sub">
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">For us</a></li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+
+        <div id="TS">
+            <h2>Touring Spot</h2>
+            <ul>
+                <ul>
+                    <h2>Kowloon</h2>
+                        <li><a href="mk.html">Mong Kok</a></li>
+                        <li>Tsim Sha Tsui</li>
+                        <li>Wong Tai Sin</li>
+                </ul>
+                <ul>
+                    <h2>HK Island</h2>
+                    <li>Causeway Bay</li>
+                    <li>Lamma Island</li>
+                    <li>Pok Fu Lam</li>
+                </ul>
+                <ul>
+                    <h2>New Territories</h2>
+                    <li>Hong Kong Science Park</li>
+                    <li>Ma On Shan</li>
+                    <li>Mai Po</li>
+                </ul>
+            </ul>
+        </div>
+
+        <hr/>
+        <p style="color:blue; font-size: 20;">
+            <b>**The Hong Kong Tourism Board (HKTB), a government-subvented body, was founded on 1 April 2001. It was reconstituted from the Hong Kong Tourist Association ,
+         which was established in 1957. </b>
+        </p>
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+    <title>Your Opinion for us</title>
+    <style type="text/css">
+        fieldset { border-radius: 10px; }
+      </style>
+    <script>
+        onchange{
+        
+        }
+    </script>
+</head>
+<body>
+    <h2>Your Opinion for us</h2>
+    <form method="post" enctype="multipart/form-data" >
+        <input name="region" type="hidden" value="Asia" />
+        <fieldset>
+            Name:
+            <input type="text" name="name" required/><br />
+            Gender:
+            <input type="radio" name="gender" value="M" checked="checked" /> Male
+            <input type="radio" name="gender" value="F" /> Female<br />
+            email:
+            <input type="email" name="email" required/><br />
+            Rating:
+            <select name="rating">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>stars (Min 1, Max 5)
+        </fieldset>
+        <fieldset>
+            <legend>Please tell us</legend>
+            <textarea name="comment" rows="4" cols="50" required="required">In less 200 words...</textarea><br />
+            Send us any photo :
+        <input type="file" name="photo" /><br />
+        </fieldset>
+        <input type="submit" value="Submit" onclick="alert('Thanks for your opinion.')">
+        <input type="reset" value="Clear" onclick="alert('Already clear all information.')">
+    </form>
+</body>
+</html>
