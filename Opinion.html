@@ -1,16 +1,45 @@
 <html>
     <head>
     <title>Your Opinion for us</title>
+
     <style type="text/css">
         fieldset { border-radius: 10px; }
-      </style>
-    <script>
-        onchange{
-        
+        #top{
+            display: flex;
+            justify-content: space-between;
         }
+        body{
+            background-image: url('background.jpg');
+        }
+        #loginbox {
+            display: block;
+            border: 2px solid black;
+            border-radius: 10px ;
+            width: 250;
+            height: 65;
+            padding: 25px;
+            float: right;
+            background-color: gray;
+        }
+
+      </style>
+
+    <script>
+
     </script>
 </head>
 <body>
+    <div id="top">
+        <div><a href="index.html"><img src="HKTB.jpg" width="300" height="100"></a></div>
+        <div style="font-size: 60;">Hong Kong Tourism Board</div>
+        <form id="loginbox" onsubmit="checkSomething();return False">
+                Username:<input type="text" name="username" required/><br/>
+                Password:<input type="password" name="password" required/><br/>
+                <input type="submit" value="Login" onclick="alert('Welcome to Hong Kong')"/>
+                <input type="reset" value="reset"/></form>
+    </div>
+    <hr/>
+
     <h2>Your Opinion for us</h2>
     <form method="post" enctype="multipart/form-data" >
         <input name="region" type="hidden" value="Asia" />
