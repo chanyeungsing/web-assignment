@@ -1,12 +1,44 @@
 <html>
     <head>
         <style type="text/css">
+
             p {background-color: green; color: yellow; font-size: 20pt}
             img{box-shadow: 10px 10px 5px grey;}
+
+            #top{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            body{
+                background-image: url('background.jpg');
+            }
+
+            #loginbox {
+                display: block;
+                border: 2px solid black;
+                border-radius: 10px ;
+                width: 250;
+                height: 65;
+                padding: 25px;
+                float: right;
+                background-color: gray;
+            }
+
         </style>
         <title>Mongkok</title>
     </head>
     <body>
+        <div id="top">
+            <div><a href="index.html"><img src="HKTB.jpg" width="300" height="100"></a></div>
+            <div style="font-size: 60;">Hong Kong Tourism Board</div>
+            <form id="loginbox" onsubmit="checkSomething();return False">
+                    Username:<input type="text" name="username" required/><br/>
+                    Password:<input type="password" name="password" required/><br/>
+                    <input type="submit" value="Login" onclick="alert('Welcome to Hong Kong')"/>
+                    <input type="reset" value="reset"/></form>
+        </div>
+        <hr/>
         <h1 align="center" style="color: rgb(0, 204, 255);">Mongkok</h1>
         <a href="https://www.tripadvisor.com.hk/Attraction_Review-g294217-d593158-Reviews-Mongkok-Hong_Kong.html">
             <img src="mongkok-1.jpg"/></a>
@@ -18,7 +50,7 @@
             <li>Night Market; Flower Market; Goldfish Market</li>
             <li>Population density of 130,000/km2</li>
         </ol><br />
-        <table border="4">
+        <table border="4" style="background-color:lightblue;">
             <tr><td colspan="2" align="center">
                 <img src="mk2.jpeg" width="50%"></td></tr>
                 <tr><td>Mong Kok in Kowloon is known for its shopping from traditional markets to hipster stores</tr></td>
